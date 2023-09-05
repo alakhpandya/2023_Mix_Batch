@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            First Name: <input id="fName" type="text" name="firstName" required>
+        </div>
+        <div>
+            <label for="mName">Middle Name: </label>
+            <input id="mName" type="text" name="mName">
+        </div>
+        <div>
+            <input type="text" placeholder="Last Name" name="lName">
+        </div>
+        <!-- 
+            inline tags vs block tag 
+             div is a block tag 
+            <div></div>
+        -->
+        <div>
+            <label for="">Choose color of your T-shirt: </label>
+            <input type="color" name="color" id="">
+        </div>
+        <div>
+            <label for="">Date of arrival: </label>
+            <input type="date" name="" id="">
+        </div>
+        <div>
+            Arrival Time: 
+            <input type="time" name="" id="">
+        </div>
+        <div>
+            <input type="datetime-local" name="" id="">
+        </div>
+        <div>
+            <input type="email" name="" placeholder="E-mail" id="">
+        </div>
+        <div>
+            Upload your recent pic: 
+            <input type="file" name="" id="">
+        </div>
+        <br>
+        <div>
+            How did you come to know about us? Please select: <br>
+            <input type="checkbox" name="" id=""> News paper <br>
+            <input type="checkbox" name="" id=""> Facebook <br>
+            <input type="checkbox" name="" id=""> Reference <br>
+            <input onclick="document.getElementById('other').setAttribute('type', 'text')" type="checkbox" name="" id=""> Other
+
+            <input id="other" type="hidden" name="">
+        </div>
+        <br>
+        <div>
+            <!-- <input type="month" name="" id=""> -->
+            <input type="week" name="" id="">
+        </div>
+        <div>
+            Adults:
+            <input type="number" name="" id="" min="1" max="6">
+            <br>
+            Child:
+            <input type="number" name="" id="" min="0">
+        </div>
+        <div>
+            Your Mobile No:
+            <input type="tel" name="" id="">
+        </div>
+        <div>
+            <input type="password" name="" placeholder="Password" id="">
+        </div>
+        <div>
+            <input type="range" value="2000" min="1000" max="10000" oninput="this.nextElementSibling.value = this.value" step="1000">
+            <output>2000</output>
+        </div>
+
+        <div>
+            <input type="checkbox" name="whatsapp" id="whatsapp" checked>
+            <label for="whatsapp">Please send me whatsapp about latest offers</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tnc" id="tnc" required>
+            <label for="tnc">I agree to the terms of use.</label>
+        </div>
+        <div>
+            <input type="button" value="No Action Button">
+            <button>Another No Action Button</button>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
+<!-- Next Class: Radio button onwards -->
