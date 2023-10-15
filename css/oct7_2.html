@@ -6,23 +6,93 @@
     <title>Document</title>
 </head>
 <style>
-    /* Tag selector */
-    a{
-        text-decoration: none;
-        background-color: green;
-    }
-    
     /* ID Selector */
+/*     
     #unscribe-btn{
         background-color: red;
     }
-
+     */
     /* class selector */
+    /*     
     .btn{
         background-color: navy;
         color: white;
+    } 
+    */
+
+    /* Tag selector */
+    a{
+        text-decoration: none;
+        /* background-color: green; */
     }
 
+    /* Combination of selectors */
+    /* ul a{
+        background-color: blueviolet;
+    } */
+    /* ul li{
+        background-color: bisque;
+    } */
+    /* ul li a{
+        background-color: bisque;
+    } */
+    /*
+    ul a li{
+        background-color: brown;
+    }
+    */
+    /* 
+    ul > a{
+        color: red;
+    } 
+    */
+    /*     
+    ul + a{
+        background-color: chartreuse;
+    } 
+    */
+/* 
+    li, a{
+        background-color: yellow;
+    } */
+/* 
+    .myList1 a{
+        background-color: black;
+        color: white;
+    }
+    .myList1 .special-links{
+        color: red;
+    } */
+    /* 
+    ul .special-links 
+    .myList1 #special-link1
+    #second-list a
+    */
+/* 
+    ul[type="square"]{
+        background-color: aqua;
+    }
+    a[target="_blank"]{
+        color: yellow;
+    }
+    a[href]{
+        color: green;
+    } */
+/* 
+    li:nth-child(3){
+        background-color: chocolate;
+    } */
+/*     
+    li:nth-child(even){
+        background-color: cadetblue;
+    }
+    li:nth-child(odd){
+        background-color: darkgrey;
+    }
+    li:nth-child(3n-4){
+        background-color: black;
+    }
+     */
 </style>
 <body>
     <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil commodi et error. Modi.</h1>
@@ -30,15 +100,15 @@
     <br><br>
     <a href="">Lorem, ipsum.</a> |
     <a href="">Nisi, omnis.</a>
-    <ul>
-        <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="">Quibusdam quae voluptates iusto hic!</a></li>
-        <li><a href="">Accusantium minima beatae placeat dolorem?</a></li>
-        <li><a href="">Numquam distinctio reiciendis perferendis facilis.</a></li>
-        <li><a href="">Quasi voluptas quae perferendis quo?</a></li>
-        <li><a href="">Distinctio magnam quisquam culpa cum.</a></li>
-        <li><a href="">Assumenda facere iusto officia sed.</a></li>
-        <li><a href="">Vitae aspernatur quae atque rerum?</a></li>
+    <ul class="myList1" type="square">
+        <li><a >Lorem ipsum dolor sit amet.</a></li>
+        <li><a class="special-links" href="https://royal.com">Quibusdam quae voluptates iusto hic!</a></li>
+        <li><a href="https://alakhpandya.com">Accusantium minima beatae placeat dolorem?</a></li>
+        <li><a >Numquam distinctio reiciendis perferendis facilis.</a></li>
+        <li><a href="https://twitter.com" target="_blank">Quasi voluptas quae perferendis quo?</a></li>
+        <li><a class="special-links" id="special-link1" href="">Distinctio magnam quisquam culpa cum.</a></li>
+        <li><a >Assumenda facere iusto officia sed.</a></li>
+        <li><a href="https://facebook.com" target="_blank">Vitae aspernatur quae atque rerum?</a></li>
         <li><a href="">Reiciendis quae libero odio doloribus?</a></li>
         <li><a href="">Est dolore expedita numquam ab?</a></li>
         <li><a href="">Distinctio dignissimos corrupti aut commodi.</a></li>
@@ -49,9 +119,11 @@
         <a href="">Porro, cumque.</a> |
         <a href="">Magni, magnam!</a>
     </ul>
-    <a class="btn" href="">Minima, facere?</a> |
-    <a class="btn" id="unscribe-btn" href="">Unsubscribe</a>
-    <ol>
+    <div class="myList1">
+        <a class="btn" href="">Minima, facere?</a> |
+        <a class="btn" id="unscribe-btn" href="">Unsubscribe</a>
+    </div>
+    <ul id="second-list">
         <a href=""><li>Lorem ipsum dolor sit amet.</li></a>
         <a href=""><li>Nam voluptatem aspernatur blanditiis dolores!</li></a>
         <a href=""><li>Tenetur dolor fugiat cum similique.</li></a>
@@ -59,7 +131,7 @@
         <a href=""><li>Corporis obcaecati laudantium saepe in.</li></a>
         <a href="">Temporibus, facere?</a> |
         <a href="">Dignissimos, ipsa?</a>
-    </ol>
+    </ul>
     <a href="">Voluptate, quis.</a> |
     <a href="">Vitae, amet?</a>
 </body>
