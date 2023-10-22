@@ -1,0 +1,27 @@
+@font-face{
+    font-family: "Priya's fonts";
+    src: url("/fonts/Bitter/static/Bitter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Priya's fonts";
+    src: url("/fonts/Bitter/static/Bitter-Black.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Almarai;
+    src: url("/fonts/Almarai/Almarai-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Almarai;
+    src: url("/fonts/Almarai/Almarai-Bold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Work sans";
+    src: url("/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
