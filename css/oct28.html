@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('/fonts.css');
+    
+    html{
+        /* font-size: 20px; */
+    }
+    p{
+        font-family: "Work sans";
+    }
+    #para1{
+        font-size: 32px;
+    }
+    #para2{
+        /* 
+        rem = root's em (font-size)
+        1 rem = 16 px by default
+        */
+        /* font-size: 2rem; */
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+    #p3-box{
+        font-size: 10px;
+    }
+
+    #para3{
+        /* 
+        em is multiple of parent's font size if it is written in 'font-size' property
+        other wise em is multiple of the font-size of the element itself.
+        */
+        font-size: 2em;
+    }
+    #container{
+        font-size: 1.7rem;      
+        /* 27.2 px */
+    }
+    #inner-div{
+        font-size: 1.5em;  /* 20 * 1.5 = 30px */
+        /* 40.8 px */
+    }
+    #p5{
+        font-size: 2em; /* 2 * 30px = 60px */
+    }
+    #box2{
+        font-size: 1.2em;
+        /* 48.96px */
+    }
+    #p6{
+        font-size: 1.7em;
+        /* 83.232 px */
+        letter-spacing: 0.2em;
+        /* 0.2 * 83.232 = 16.65 px */
+    }
+</style>
+<body>
+    <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ratione consequatur. Deleniti vel, perspiciatis nesciunt accusamus repellendus sit velit cupiditate similique tempore vero. Laboriosam excepturi eveniet aperiam non. Quaerat, minima.</p>
+    <p id="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ratione consequatur. Deleniti vel, perspiciatis nesciunt accusamus repellendus sit velit cupiditate similique tempore vero. Laboriosam excepturi eveniet aperiam non. Quaerat, minima.</p>
+    <div id="p3-box">
+        <p id="para3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ratione consequatur. Deleniti vel, perspiciatis nesciunt accusamus repellendus sit velit cupiditate similique tempore vero. Laboriosam excepturi eveniet aperiam non. Quaerat, minima.</p>
+    </div>
+    <div id="container">
+        <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsa adipisci.</p>
+        <div id="inner-div">
+            <p id="p5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ullam quia, corrupti atque, unde obcaecati recusandae tempore qui quas voluptates pariatur corporis beatae! Ad, doloribus dolore nam fuga in tenetur.</p>
+            <div id="box2">
+                <p id="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati temporibus blanditiis earum dolorum? Saepe dolores architecto fugiat eveniet porro, autem consequatur ipsam, rem vero quis maiores provident corporis nostrum officiis aliquam voluptas non ab ipsum deserunt veritatis doloribus ullam nihil.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
