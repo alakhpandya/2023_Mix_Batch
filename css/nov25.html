@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .outer{
+        border: solid;
+        height: 300px;
+        /* background-color: orangered; using name of the color */
+        /* background-color: rgb(255, 111, 0); using color map/chart */
+        /* background-color: rgb(128, 56, 0); Writing rgb value directly */
+        /* background-color: rgb(200, 85, 198); */
+        /* 
+        0: 00, 255: FF
+        200: C8
+        85: 55
+        198: C6
+        */
+        /* background-color: #C855C6; using hex code */
+        /* background-color: #5A0949; */
+        background: url('/images/pexels-vincent-rivaud-2147491.jpg');
+        background-size: 100%;
+        position: relative;
+    }
+    .internal{
+        /* border: solid; */
+        
+        height: 100%;
+        /* width: 60%; */
+        
+        /* background-color: greenyellow; */
+        
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+
+        /* background-color: transparent; */
+        background-color: rgba(0, 0, 0, 0.7);
+        color: whitesmoke;
+
+        font-family: cursive;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="outer">
+        <div class="internal">
+            <h1>Best Pizzas in the town!</h1>
+        </div>
+    </div>
+</body>
+</html>
