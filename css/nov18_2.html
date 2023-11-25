@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 1rem;
+        background-image: linear-gradient(to left bottom, #f44d6c, #ff6d45, #fd980b, #dfc300, #a8eb12);
+        height: 100vh;
+    }
+    .card{
+        margin: 2rem auto;
+        border: solid black;
+        border-radius: 10px;
+        width: 200px;
+        height: 300px;
+    }
+    .upper-card{
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+    img{
+        width: 200px;
+    }
+    .product-title{
+        font-family: cursive;
+        font-weight: 500;
+        /* border: solid red; */
+        position: absolute;
+        left: 7px;
+        top: 3px;
+    }
+    .discount{
+        padding-top: 17px;
+        padding-left: 10px;
+        background-color: red;
+        color: white;
+        font-family: cursive;
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+
+        position: absolute;
+        right: -12px;
+        top: -12px;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="upper-card">
+            <h3 class="product-title">Aviator</h3>
+            <img src="/images/rayban_aviator.png" alt="">
+            <div class="discount">80% off</div>
+        </div>
+        <div class="lower-card">
+            <span class="color-text">9 colors</span>
+            <span class="mrp">₹ 7390.00</span>
+        </div>
+    </div>
+</body>
+</html>
