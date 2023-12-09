@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: content-box;    default */
+        box-sizing: border-box;
+    }
+    
+    div{
+        width: 300px;
+        /* margin: 30px; */
+        /* margin: 30px 50%;
+        transform: translateX(-50%); */
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: 30px auto;
+    }
+    #box1{
+        background-color: blueviolet;
+        padding: 10px 20px;
+        /* width: 340px; */
+    }
+    #box2{
+        background-color: burlywood;
+        /* width: 340px; */
+        /* width: 380px; */
+        border: 15px solid;
+    }
+    #box3{
+        background-color: chartreuse;
+        /* width: 340px; */
+        padding: 1rem 2.5rem;
+    }
+    #hello{
+        /* margin auto works only with block elements */
+        margin: 30px auto;
+    }
+    h1{
+        /* 
+        margin auto does not work vertically
+        we need to give width to an element to make margin auto work
+        margin auto works only with block element
+        */
+        margin: auto;
+        border: solid;
+        /* width: 500px; */
+        /* width: fit-content; */
+        text-align: center;
+    }
+    p{
+        /* text-align: left; */
+        /* text-align: right; */
+        /* text-align: center; */
+        text-align: justify;
+    }
+
+    button{
+        background-color: blueviolet;
+        color: white;
+        margin: auto;
+        width: 75px;
+        border: none;
+        cursor: pointer;
+    }
+    ul{
+        padding: 50px;
+        /* list-style: none;   OR */
+        list-style-type: none;
+    }
+    form{
+        padding-left: 50px;
+    }
+    input{
+        /* border: solid 4px; */
+        /* outline: 4px solid red; */
+        outline: none;
+    }
+</style>
+<body>
+    
+    <h1>Lorem ipsum delit. Necessitatibus, rerum!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, earum nihil! Vitae voluptatem aut dicta. Placeat ratione, quisquam quidem totam maxime expedita in reiciendis atque! Abtte consequaturpdquashg quibusdam eius perferendis quod accusamus expedita possimus incidunt, corrupti soluta nam in ex exercitationem consectetur placeat recusandae ducimus earum cum hic accusantium molestias magni! Nesciunt quaerat ab sequi perspiciatis assumenda, voluptatibus quam autem error, distinctio earum labore placeat alias id harum soluta vero architecto numquam odio mollitia commodi ex corporis! Temporraaaa voluptas sit eaque. Accusamus eos laboriosam tempora perferendis, tenetur modi? Aliquam tenetur sint esse quae reiciendis, nam voluptate voluptates iusto.</p>
+    <button>Btn 1</button>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Placeat corrupti saepe vel! Officiis, dicta.</li>
+        <li>Enim voluptates autem ipsum fugit dolore?</li>
+        <li>Sed, repudiandae assumenda. Laboriosam, ullam impedit.</li>
+        <li>Iure hic amet veritatis quasi odio.</li>
+    </ul>
+    <form action="">
+        <input type="text" placeholder="hello">
+    </form>
+
+    <div id="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus corrupti quis veritatis laudantium atque necessitatibus odio ullam id nihil adipisci?</div>
+    <a id="hello" href="#">Hello</a>
+    <div id="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus corrupti quis veritatis laudantium atque necessitatibus odio ullam id nihil adipisci?</div>
+    
+    <div id="box3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus corrupti quis veritatis laudantium atque necessitatibus odio ullam id nihil adipisci?</div>
+</body>
+</html>
