@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+    }
+    .text-big{
+        font-size: 1.2rem;
+        line-height: 1.5em;
+    }
+    a{
+        text-decoration: none;
+        position: relative;
+    }
+    a:hover::after{
+        /* content: "Join our fb community"; */
+        content: attr(data-tooltip-msg);
+        background-color: black;
+        color: antiquewhite;
+        padding: 0rem 0.6rem;
+        border-radius: 2em;
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 100%;
+        left: 5px;
+        white-space: nowrap;
+    }
+/* 
+    #twitter{
+        content: "Follow us on twitter";
+    }
+     */
+</style>
+<body>
+    <h1 class="site-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque dolorem, adipisci quibusdam odio corporis!</h1>
+    <p class="text-big">Lorem ipsum dolor sit amet consectetur <a data-tooltip-msg="Join our fb community" href="#">adipisicing elit.</a> Nam quo sequi, unde possimus dicta mollitia hic, atque quasi, obcaecati illum ipsum rem. Ratione accusantium omnis cum itaque totam, commodi perferendis, corrupti quas perspiciatis enim tempore. Soluta, ullam reiciendis ea omnis corrupti perspiciatis quasi, eum, consectetur ex animi est veniam? Quo hic aliquid nemo inventore molestias dolorem ad quod reiciendis veritatis laboriosam! Cum enim fuga <a data-tooltip-msg="Follow us on twitter" id="twitter" href="#">totam dolore</a> itaque natus eos ducimus vitae! Quod nemo, voluptatibus dolores vero atque culpa molestias animi doloribus amet ducimus quasi, officiis exercitationem labore similique corporis laborum optio eius. Adipisci fugit alias laborum aliquid harum! Tempora possimus a aut doloremque, veniam neque iste, eius mollitia odit ea, nostrum earum. Facere quisquam minus saepe totam odio? Veritatis sunt ad quis qui. Beatae aliquid magnam facere minima architecto sed officia, adipisci dolorum laborum optio? Aliquid deserunt quae saepe perspiciatis nemo tenetur natus ipsa eaque magnam hic? Blanditiis, amet veniam odio distinctio doloribus id possimus perspiciatis minus maxime odit nisi. Quo at dolorum modi, minus numquam deserunt perspiciatis possimus repellendus reprehenderit iste dolor laboriosam rerum id, hic distinctio saepe illum. Sapiente, fugit est neque inventore voluptatibus aspernatur vel autem, <a href="#" data-tooltip-msg="Subscribe to our youtube channel">exercitationem vero</a> rem earum molestiae ad. Eum est hic porro repellat nisi maxime culpa libero natus, quidem officiis distinctio obcaecati id suscipit, alias, vero sed consectetur adipisci quis similique tempore dolorem? Soluta consequatur quod officia, molestias suscipit labore eos. Necessitatibus eum est illum quam aliquam itaque, voluptatem obcaecati cum quas recusandae minus amet nemo nam porro molestiae? Illo enim nisi modi dolor numquam labore, quia qui sapiente commodi perspiciatis quidem deleniti perferendis maiores. Tenetur maiores <a href="#" data-tooltip-msg="Connect with us on linked-in">nobis ut pariatur?</a> Nulla exercitationem temporibus ad reiciendis aliquid consequatur corrupti blanditiis molestias est earum, quis itaque sit beatae. Consequatur aliquam eveniet similique animi ad. Consequatur odio inventore deserunt et aperiam dolor assumenda, suscipit dolore quisquam.</p>
+</body>
+</html>
