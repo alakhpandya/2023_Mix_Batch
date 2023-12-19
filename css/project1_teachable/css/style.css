@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: beige;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.nav-left, .nav-right{
+    width: 100px;
+}
+
+.nav-left{
+    background-color: green;
+}
+
+.nav-right{
+    background-color: brown;
+}
