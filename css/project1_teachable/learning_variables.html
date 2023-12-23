@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --btn-bg-color: grey;
+        --btn-text-color: black;
+
+        --std_font_size: 0.9rem;
+        --paddingNormal: 0.2rem 1rem;
+
+        --primaryFonts: Reckless-Light, sans-serif;
+    }
+    .navbar{
+        height: 10vh;
+        background-color: var(--btn-bg-color);
+    }
+    
+    .nav-links{
+        text-decoration: none;
+        color: var(--btn-text-color);
+    }
+
+    .banner{
+        height: 90vh;
+        background-color: lightgray;
+    }
+
+    h1{
+        font-family: var(--primaryFonts);
+    }
+    button{
+        padding: var(--paddingNormal);
+        border: solid 1px;
+        background-color: var(--btn-bg-color);
+        color: var(--btn-text-color);
+        font-size: var(--std_font_size);
+
+        font-family: var(--primaryFonts);
+    }
+
+    .btn{
+        text-decoration: none;
+        border: solid 1px;
+        padding: var(--paddingNormal);
+        background-color: var(--btn-bg-color);
+        color: var(--btn-text-color);
+        font-size: var(--std_font_size);
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <a class="nav-links" href="#">Home</a>
+        <a class="nav-links" href="#">About</a>
+        <a class="nav-links" href="#">Contact</a>
+        <a class="nav-links" href="#">Services</a>
+    </div>
+    <div class="banner">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <button>Btn1</button>
+        <button>Btn2</button>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus velit deserunt aliquid ex, tempore quia qui sequi, quam earum debitis perferendis incidunt eius? Non odio quis veritatis adipisci rem maiores!</p>
+        <a class="btn" href="#">link1</a>
+        <a class="btn" href="#">link2</a>
+    </div>
+</body>
+</html>
