@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box{
+        border: solid;
+        height: 60px;
+        width: 100px;
+        margin: 5rem auto;
+        text-align: center;
+        /* transform: translateX(100px); */
+        /* transform: translateX(-25px); */
+        /* transform: translateY(50px); */
+        /* transform: translateY(-50px); */
+        /* transform: translate(50px, 25px); */
+
+        /* transition: 0.5s; */
+    }
+    .box:hover{
+        /* transform: translateX(200px); */
+
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.2); */
+        /* transform: scale(1.2); */
+        transform: scale(1.5, 1.2);
+        /* width: 150px; */
+    }
+    #box2{
+        padding-top: 0.8rem;
+        height: 50px;
+        /* transition: 1s; */
+        transition-duration: 1s;
+        /* transition-property: background-color; */
+        transition-property: all;   /* default */
+        background-color: orange;
+    }
+    #box2:hover{
+        /* transform: skewX(30deg); */
+        /* transform: skewY(30deg); */
+        /* transform: skew(40deg, 30deg); */
+
+        /* transform: rotate(45deg); */
+        /* transform: rotate(90deg); */
+        /* transform: rotate(180deg); */
+        transform: rotate(360deg);
+        background-color: maroon;
+        color: white;
+    }
+
+    button{
+        margin-left: 5rem;
+        transition: 0.3s;
+        position: relative;
+        bottom: 0px;
+    }
+    button:hover{
+        bottom: 5px;
+    }
+    .progress-bar{
+        height: 50px;
+        width: 10px;
+        background-color: green;
+        transition-duration: 5s;
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease;   default */
+        /* transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
+        /* transition-property: all;   default */
+
+        /* transition: all 5s ease; */
+        /* transition: 5s; */
+        /* transition: 50ms; */
+
+        transition-timing-function: steps(10);
+    }
+    .progress-bar:hover{
+        width: 100%;
+        background-color: red;
+    }
+    .rotate{
+        height: 50px;
+        width: 50px;
+        background-color: plum;
+        margin: 2rem auto 10rem;
+        transition: 0.5s;
+    }
+    .rotate:hover{
+        /* transform: rotateX(90deg);
+        transform: rotateY(90deg);
+        transform: rotateZ(90deg); */
+        transform: rotate(45deg);
+    }
+</style>
+<body>
+    <div class="box">Click here to close this window</div>
+    <div class="box" id="box2">Box 2</div>
+    <button>Relative</button>
+    <div class="progress-bar"></div>
+    <div class="rotate"></div>
+</body>
+</html>
