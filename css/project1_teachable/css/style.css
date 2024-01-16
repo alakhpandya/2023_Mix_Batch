@@ -1,3 +1,5 @@
+@import url("/css/fonts.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
     --dark-green: #1b4942;
     --medium-green: rgb(59, 236, 185);
     --light-green: #dbeae4;
+    --off-white: #F8FAF4;
     --white: white;
     --btn-hover: #6fe4ba;
     --nav-btn-hover: #246f61;
@@ -28,9 +31,12 @@ body{
 }
 .btn{
     background-color: var(--medium-green);
+    border: none;
     color: var(--black);
     padding: 1.2rem 1.75rem;
     border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: var(--btn-hover);
@@ -42,6 +48,7 @@ body{
 .nav-btn{
     background-color: var(--dark-green);
     color: var(--white);
+    font-size: 1rem;
 }
 .nav-btn:hover{
     background-color: var(--nav-btn-hover);
@@ -112,15 +119,138 @@ nav .nav-link{
 
 /* ------------------------------------ Main ------------------------------------ */
 
-section{
-    border: solid;
-    padding: 5rem 10vw;
-}
 
-#section-1{
+section{
+    padding: 5rem 10vw;
     display: flex;
     gap: 4rem;
 }
-#section-1 .form-container{
-    border:solid;
+.primary-title{
+    font-size: 3.75rem;
+    font-family: var(--secondary-fonts);
+    color: var(--dark-green);
+}
+.secondary-title{
+    font-size: 3rem;
+}
+.third-title{
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+.secondary-title, .third-title{
+    font-family: var(--primary-fonts);
+    color: var(--dark-green);
+}
+.primary-text{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--dark-green);
+    margin: 1.5rem 0;
+}
+
+/* ------------------------------------ Section-1 ------------------------------------ */
+
+#section-1{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.text-container{
+    max-width: 550px;
+}
+.joining-form{
+    margin: 5rem 0;
+}
+.form-text{
+    font-size: 0.875rem;
+    color: var(--black);
+}
+.input-box{
+    margin: 1rem 0;
+}
+.form-input{
+    border: none;
+    border-bottom: solid black 1px;
+    border-radius: 0;
+    padding: 1rem;
+    width: 300px;
+    font-size: 1.15rem;
+    background-color: #eee;
+    margin-right: 12px;
+}
+.form-input:focus{
+    outline: 3.5px solid var(--btn-hover);
+    border: none;
+}
+.privacy-policy{
+    font-size: 0.75rem;
+    color: var(--dark-green);
+    width: 50%;
+}
+.legal-link{
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------ overlapping-box ------------------------------------ */
+.overlapping-box{
+    height: 5rem;
+    /* border: solid; */
+    background-color: var(--light-green);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* ------------------------------------ Section-2 ------------------------------------ */
+#section-2{
+    background-color: var(--light-green);
+}
+.video{
+    width: 500px;
+}
+.video-link{
+    color: var(--dark-green);
+}
+.play-btn{
+    color: var(--medium-green);
+}
+
+/* ------------------------------------ Section-3 ------------------------------------ */
+
+#section-3{
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--off-white);
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 350px;
+    text-align: left;
+    background-color: var(--white);
+}
+.card-img{
+    width: 100%;
+}
+.card-content{
+    padding: 2rem 1.5rem 1.5rem;
+}
+.card-link{
+    color: var(--dark-green);
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 4px;
+}
+.underline{
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-green);
 }
