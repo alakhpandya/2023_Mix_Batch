@@ -41,6 +41,9 @@ body{
 .btn:hover{
     background-color: var(--btn-hover);
 }
+.banner-img{
+    width: 100%;
+}
 
 
 /* ------------------------------------ Navbar ------------------------------------ */
@@ -220,7 +223,7 @@ section{
 
 /* ------------------------------------ Section-3 ------------------------------------ */
 
-#section-3{
+#section-3, #section-6{
     flex-direction: column;
     text-align: center;
     background-color: var(--off-white);
@@ -253,4 +256,72 @@ section{
     bottom: 0;
     left: 0;
     background-color: var(--dark-green);
+}
+
+/* ------------------------------------ Section-4 ------------------------------------ */
+
+
+/* ------------------------------------ Section-5 ------------------------------------ */
+#section-5{
+    padding: 0;
+}
+
+/* ------------------------------------ Section-6 ------------------------------------ */
+#section-6 .card{
+    padding: 2rem 1.5rem 1.5rem;
+    background-color: transparent;
+}
+#section-6 .card-content{
+    padding: 0;
+}
+.card-title{
+    font-family: var(--secondary-fonts);
+    font-weight: 300;
+    font-size: 1.875rem;
+    color: var(--dark-green);
+    border-bottom: solid;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+}
+.section-6-btn-container{
+    text-align: center;
+}
+
+
+/* ------------------------------------ Section-6 ------------------------------------ */
+#section-9{
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* margin: auto; */
+}
+.carousel-img-container{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+}
+.carousel-profile-pic{
+    width: 100%;
+}
+.quote-mark{
+    margin-bottom: 2rem;
+}
+.testimony-text{
+    font-family: var(--secondary-fonts);
+    font-size: 2.25rem;
+}
+.clossing-quotes{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.user-name{
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+.user-company{
+    font-size: 1rem;
 }
