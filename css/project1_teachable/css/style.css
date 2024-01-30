@@ -8,14 +8,22 @@
 :root{
     --primary-fonts: Basis-Medium, sans-serif;
     --secondary-fonts: Reckless-Light, sans-serif;
-    --black: #222222;
+    /* --black: #222222;
     --dark-green: #1b4942;
-    --medium-green: rgb(59, 236, 185);
+    --medium-green: #3becb9;
     --light-green: #dbeae4;
     --off-white: #F8FAF4;
     --white: white;
     --btn-hover: #6fe4ba;
-    --nav-btn-hover: #246f61;
+    --nav-btn-hover: #246f61; */
+    --black: #001219;
+    --dark-green: #005f73;
+    --medium-green: #0a9396;
+    --light-green: #94d2bd;
+    --off-white: #e9d8a6;
+    --white: #e5e5e5;
+    --btn-hover: #ae2012;
+    --nav-btn-hover: #ee9b00;
 }
 
 /* ------------------------------------ Global Styling ------------------------------------ */
@@ -324,4 +332,23 @@ section{
 }
 .user-company{
     font-size: 1rem;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    font-size: 1.5rem;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    float: left;
+}
+.owl-carousel .owl-nav button.owl-next{
+    float: right;
+}
+.carousel-container{
+    position: relative;
+}
+.owl-theme .owl-nav{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
 }

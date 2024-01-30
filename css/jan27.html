@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .boxes{
+        border: solid;
+        height: 200px;
+        width: 200px;
+    }
+
+
+    /* Media Query */
+    @media (max-width: 1200px){
+        .boxes{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    @media (max-width: 900px){
+        .boxes{
+            height: 100px;
+            width: 100px;
+            background-color: maroon;
+            color: white;
+            text-align: center;
+        }
+    }
+    @media (max-width: 600px){
+        .container{
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .boxes{
+            height: 400px;
+            width: 90%;
+            max-width: 400px;
+            background-color: lightgreen;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">Box 1</div>
+        <div class="boxes" id="box2">Box 2</div>
+        <div class="boxes" id="box3">Box 3</div>
+        <div class="boxes" id="box4">Box 4</div>
+        <div class="boxes" id="box5">Box 5</div>
+        <div class="boxes" id="box6">Box 6</div>
+    </div>
+</body>
+</html>
