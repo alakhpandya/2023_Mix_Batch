@@ -26,32 +26,117 @@ body{
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+}
 
 /* ---------------------- Navbar ---------------------- */
 .navbar{
+    height: 4rem;
     background-color: var(--black);
-    height: 5rem;
+    overflow: hidden;
+    padding-top: 0.6rem;
+    transition: 0.2s;
     padding: 0 20px;
+}
+.nav-expand{
+    height: 10rem;
+}
+.nav-sm{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar a{
-    color: var(--white);
-}
+
 .nav-logo{
+    color: var(--white);
     font-family: var(--logo-fonts);
     font-size: 2rem;
     font-style: italic;
 }
-.nav-link{
-    border: solid 2px var(--white);
-    padding: 0.3rem 0.6rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
+.bar-icon{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
 }
-.nav-link:hover{
-    background-color: var(--white);
-    color: var(--black);
-    border-color: var(--white);
+.nav-right{
+    background-color: var(--black);
+    padding: 1rem;
+}
+.nav-item{
+    margin: 1rem 0;
+    text-align: right;
+}
+.nav-link{
+    font-size: 1.1rem;
+    color: var(--white);
+}
+/* ---------------------- Form ---------------------- */
+.form-container{
+    background-color: var(--black);
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 2rem 1rem 1rem;
+}
+.login-signup-form{
+    border: solid 2px var(--white);
+    border-radius: 15px;
+    padding: 2rem 1rem 1rem;
+    position: relative;
+}
+.form-title{
+    font-family: var(--title-fonts);
+    font-size: 1.7rem;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translate(0, -55%);
+    background-color: var(--black);
+    padding: 0 2px;
+}
+.form-link{
+    color: var(--white);
+}
+.create-acount-link{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* ---------------------- Media Query ---------------------- */
+@media (min-width: 400px){
+    .bar-icon{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-right{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0rem;
+    }
+    .nav-link{
+        background-color: var(--white);
+        color: var(--black);
+        padding: 0.5rem 1rem;
+        border: solid var(--white) 2px;
+        border-radius: 5px;
+    }
+    .nav-link:hover{
+        background-color: var(--black);
+        color: var(--white);
+    }
 }

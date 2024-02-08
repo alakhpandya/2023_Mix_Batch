@@ -69,6 +69,7 @@ nav{
     height: 5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 50px;
     border-bottom: 1px solid var(--black);
 }
@@ -126,6 +127,12 @@ nav .nav-link{
 .nav-item:hover .left, .nav-item:hover .right{
     height: 100%;
     background-color: var(--dark-green);
+}
+.bar-icon{
+    color: var(--dark-green);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
 }
 
 /* ------------------------------------ Main ------------------------------------ */
@@ -351,4 +358,44 @@ section{
     left: 50%;
     transform: translateX(-50%);
     width: 170px;
+}
+
+/* ------------------------------------ Media Queries ------------------------------------ */
+@media (max-width:1150px) {
+    nav{
+        padding: 0 15px;
+    }
+    .nav-left, .nav-right{
+        gap: 1rem;
+    }
+}
+@media (max-width: 950px){
+    .bar-icon{
+        display: block;
+    }
+    .nav-right{
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    nav{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 50px;
+        border-bottom: 1px solid var(--black);
+        position: absolute;
+        z-index: 5;
+        background-color: var(--white);
+    }
+    .nav-right{
+        display: flex;
+    }
+    .nav-left, .nav-right{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
 }

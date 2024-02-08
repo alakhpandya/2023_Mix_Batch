@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="/CSS/style.css">
 
     <title>Document</title>
-</head>
+</head> 
 <body>
     <div class="navbar">
-        <div class="nav-left">
-            <a href="#" class="nav-logo">Choco Land</a>
+        <div class="nav-sm">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo">Choco Land</a>
+            </div>
+            <i class="fa-solid fa-bars bar-icon" onclick="document.querySelector('.navbar').classList.toggle('nav-expand')"></i>
         </div>
-        <div class="nav-right">
-            <a href="#" class="nav-link">Login</a>
-            <a href="#" class="nav-link">Sign Up</a>
-        </div>
+        <ul class="nav-right">
+            <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="register.html" class="nav-link">Sign Up</a></li>
+        </ul>
     </div>
 </body>
 </html>
