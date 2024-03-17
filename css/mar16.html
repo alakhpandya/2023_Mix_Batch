@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .progress-bar{
+        background-color: green;
+        height: 50px;
+        width: 10px;
+        /* transition: 4s; */
+        /* animation-name: expand; */
+        animation-duration: 2s;
+        /* animation-iteration-count: 3; */
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-delay: 2s;
+    }
+    .pause-animation{
+        animation-play-state: paused;
+    }
+    /* .progress-bar:hover{
+        width: 100%;
+    } */
+    .btn-box{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .sphere{
+        background-color: red;
+        height: 70px;
+        width: 70px;
+        /* border-radius: 50%; */
+        position: absolute;
+        top: 120px;
+        left: 50px;
+        box-shadow: 0px 0px 20px;
+        border: solid;
+
+        /* animation-name: move-sphere2; */
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+
+
+    /* Creating A New Animation */
+    @keyframes expand{
+        from{
+            width: 10px;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes move-sphere {
+        0%{
+            top: 120px;
+            left: 50px;
+            background-color: red;
+        }
+        50%{
+            top: 350px;
+            left: 50px;
+            background-color: greenyellow;
+        }
+        100%{
+            top: 120px;
+            left: 50px;
+            background-color: red;
+        }
+    }
+    @keyframes move-sphere2 {
+        0%{
+            top: 120px;
+            left: 50px;
+            background-color: red;
+        }
+        25%{
+            top: 350px;
+            left: 50px;
+            background-color: greenyellow;
+            border-radius: 25%;
+        }
+        50%{
+            top: 350px;
+            left: 350px;
+            background-color: green;
+            border-radius: 50%;
+        }
+        75%{
+            top: 120px;
+            left: 350px;
+            background-color: orange;
+            border-radius: 25%;
+        }
+    }
+</style>
+<body>
+    <!-- Animation -->
+    <div class="progress-bar"></div>
+    <div class="btn-box">
+        <button class="btn" onclick="document.querySelector('.progress-bar').classList.toggle('pause-animation')">Play/Pause</button>
+    </div>
+
+    <div class="sphere"></div>
+</body>
+</html>

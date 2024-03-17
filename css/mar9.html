@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+        font-family: sans-serif;
+    }
+    .grid-parent{
+        padding: 1%;
+        display: grid;
+        gap: 1rem;
+    }
+    .card{
+        border-radius: 10px;
+        padding: 0.5rem;    
+    }
+    .user{
+        /* border: solid red; */
+        display: flex;
+        gap: 0.5rem;
+    }
+    .profile-pic{
+        border: solid bisque;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .user div{
+        /* border: black solid; */
+        text-align: center;
+        padding-top: 0.4rem;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .role{
+        font-size: 1.2rem;
+    }
+    .card-title{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin: 1.5rem 0;
+    }
+    .card-text{
+        font-size: 1.2rem;
+        line-height: 1.35em;
+    }
+    #c1, #c2, #c5{
+        color: white;
+    }
+    #c1{
+        background-color: blueviolet;
+    }
+    #c2{
+        background-color: slategray;
+    }
+    #c3, #c4{
+        background-color: white;
+    }
+    #c5{
+        background-color: #333;
+    }
+
+
+
+    /* Media Queries */
+    @media (min-width: 370px){
+        .grid-parent{
+            padding: 1rem;
+        }
+        .card{
+            padding: 1rem;    
+        }
+    }
+
+    @media (min-width: 768px){
+        .grid-parent{
+            grid-template-columns: 1fr 1fr;
+        }
+        #c1, #c5{
+            grid-column: span 2;
+        }
+        #c3{
+            grid-row: span 2;
+        }
+    }
+    @media (min-width: 1200px){
+        .grid-parent{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+  </style>
+  <body>
+    <!--     
+    <div class="card" id="c1">
+        <div class="user">
+            <img class="profile-pic" src="" alt="">
+            <div>
+                <h3 class="name">lorem2</h3>
+                <p class="role">lorem2</p>
+            </div>
+        </div>
+        <p class="card-title">lorem27</p>
+        <p class="card-text">lorem90</p>
+    </div> -->
+
+    <!-- (div.card#c$>(div.user>(img.profile-pic+div>((h3.name>lorem2)+(p.role>lorem2))))+(p.card-title>lorem27)+(p.card-text>lorem90))*5 -->
+
+    <div class="grid-parent">
+      <div class="card" id="c1">
+        <div class="user">
+          <img src="" alt="" class="profile-pic" />
+          <div>
+            <h3 class="name">Lorem, ipsum.</h3>
+            <p class="role">Lorem, ipsum.</p>
+          </div>
+        </div>
+        <p class="card-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe illum
+          atque explicabo ullam alias iusto, laudantium maiores, adipisci,
+          dolorem asperiores pariatur! Cupiditate vel earum dolore atque fugit.
+        </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et
+          voluptas sunt eveniet, modi dolorem laboriosam reiciendis iste rem
+          voluptatibus a ea molestiae veniam. Repellat beatae, dolorem ad
+          tempore atque recusandae facere, perferendis libero, at maiores quae
+          non! Provident obcaecati iure quod itaque ex veniam facilis assumenda
+          impedit necessitatibus dolorum sint unde optio, quisquam incidunt,
+          nemo sed deleniti eaque quo quos saepe nam?
+        </p>
+      </div>
+      <div class="card" id="c2">
+        <div class="user">
+          <img src="" alt="" class="profile-pic" />
+          <div>
+            <h3 class="name">Corrupti, molestiae.</h3>
+            <p class="role">Quod, necessitatibus.</p>
+          </div>
+        </div>
+        <p class="card-title">
+          Eum qui sed aperiam at veniam molestiae maxime, saepe dolores adipisci
+          natus?
+        </p>
+        <p class="card-text">
+          Aut suscipit impedit quidem dolorum molestias consequuntur vel,
+          praesentium illo sequi nihil cum reiciendis facilis neque alias autem
+          mollitia cumque dolorem, doloribus deleniti maxime fugiat nobis
+          exercitationem rerum repudiandae.
+        </p>
+      </div>
+      <div class="card" id="c3">
+        <div class="user">
+          <img src="" alt="" class="profile-pic" />
+          <div>
+            <h3 class="name">Veritatis, consequatur?</h3>
+            <p class="role">Eum, maiores.</p>
+          </div>
+        </div>
+        <p class="card-title">
+          Quasi id repudiandae necessitatibus velit, dolores incidunt quis,
+          tempora!
+        </p>
+        <p class="card-text">
+          Odio nesciunt cum quisquam alias? Dignissimos perferendis iure, soluta
+          nostrum nihil similique officiis eum cum ut, eos exercitationem
+          accusantium sunt, aspernatur nulla. Rem eius accusamus nobis iure sed?
+          Autem maiores ut quod cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo illo perspiciatis, culpa corporis fuga deserunt voluptate sapiente ratione ut ipsa odio ullam aliquam eligendi consequatur mollitia! Earum architecto et illum rem quos, fuga recusandae officiis vitae nihil soluta ea eaque. Dolore tempora dolores, voluptate illum
+          harum ratione sapiente maiores nostrum consequuntur reiciendis,
+          explicabo architecto omnis doloremque tempore impedit magnam. Aliquam
+          atque in eveniet, culpa repellat nostrum? Pariatur quaerat maiores
+          quasi alias quidem excepturi tempora, amet deserunt molestias in nulla
+          atque! Voluptate esse eius earum aut accusamus adipisci placeat cum
+          illo nisi numquam reiciendis tempore ea, molestiae eligendi?
+        </p>
+      </div>
+      <div class="card" id="c4">
+        <div class="user">
+          <img src="" alt="" class="profile-pic" />
+          <div>
+            <h3 class="name">Eius, excepturi.</h3>
+            <p class="role">Rem, inventore!</p>
+          </div>
+        </div>
+        <p class="card-title">
+          Vero doloribus facilis vel impedit exercitationem necessitatibus harum.
+        </p>
+        <p class="card-text">
+          Nostrum aliquam reprehenderit alias natus, ad dolorum non laudantium
+          quibusdam architecto velit tempora repudiandae libero dolorem tempore
+          ipsam nisi excepturi a quisquam nihil saepe totam.
+        </p>
+      </div>
+      <div class="card" id="c5">
+        <div class="user">
+          <img src="" alt="" class="profile-pic" />
+          <div>
+            <h3 class="name">Illo, architecto!</h3>
+            <p class="role">Totam, quod.</p>
+          </div>
+        </div>
+        <p class="card-title">
+          Quod iusto rerum eligendi nemo, laudantium pariatur nisi expedita
+          voluptatem consectetur, officia deserunt laboriosam sed recusandae
+          dolores, quis id quas eaque nulla...
+        </p>
+        <p class="card-text">
+          Voluptatem obcaecati aspernatur, aliquam ad quisquam laborum impedit
+          ex dolore dolores ullam rem reiciendis! Ipsum fuga eius minus
+          eligendi, voluptatum repellat eaque nihil, consectetur magni mollitia
+          dolorem! Modi suscipit eum porro quisquam enim cum cumque laborum
+          consequuntur laboriosam placeat. Deserunt, repellat perspiciatis
+          adipisci ex, laborum voluptates voluptatum tempora corrupti rerum quis
+          odio, nisi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
